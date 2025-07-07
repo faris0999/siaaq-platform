@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة التحكم - منصة سياق</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-8 font-sans">
+  <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">مرحبًا بك في منصة سياق</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <a href="auctions.html" class="block bg-white p-6 rounded-lg shadow hover:bg-gray-100 transition">
+      <h2 class="text-xl font-semibold text-indigo-600 mb-2">إنشاء مزاد</h2>
+      <p class="text-gray-700">ابدأ مزادك الرقمي بثقة وأمان تام.</p>
+    </a>
+
+    <a href="lawyer-help.html" class="block bg-white p-6 rounded-lg shadow hover:bg-gray-100 transition">
+      <h2 class="text-xl font-semibold text-green-600 mb-2">طلب محامي</h2>
+      <p class="text-gray-700">تواصل مع محامين مرخصين لمساعدتك.</p>
+    </a>
+
+    <a href="contract.html" class="block bg-white p-6 rounded-lg shadow hover:bg-gray-100 transition">
+      <h2 class="text-xl font-semibold text-blue-600 mb-2">إنشاء عقد</h2>
+      <p class="text-gray-700">صمم عقدك باحترافية وربطه بـ"نفاذ".</p>
+    </a>
+
+    <a href="verify.html" class="block bg-white p-6 rounded-lg shadow hover:bg-gray-100 transition">
+      <h2 class="text-xl font-semibold text-yellow-600 mb-2">التحقق من عقد</h2>
+      <p class="text-gray-700">تحقق من صحة العقود إلكترونيًا.</p>
+    </a>
+
+    <a href="tools.html" class="block bg-white p-6 rounded-lg shadow hover:bg-gray-100 transition">
+      <h2 class="text-xl font-semibold text-red-600 mb-2">أدوات قانونية</h2>
+      <p class="text-gray-700">مجموعة أدوات مفيدة تسهّل عملك القانوني.</p>
+    </a>
+  </div>
+</body>
+</html>
