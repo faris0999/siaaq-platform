@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج العقد الرقمي</title>
+</head>
+<body>
+    <h1>إنشاء عقد رقمي</h1>
+    <form action="/submit-contract" method="post">
+        <label for="partyA">الطرف الأول:</label><br>
+        <input type="text" id="partyA" name="partyA"><br><br>
+
+        <label for="partyB">الطرف الثاني:</label><br>
+        <input type="text" id="partyB" name="partyB"><br><br>
+
+        <label for="contractDetails">تفاصيل العقد:</label><br>
+        <textarea id="contractDetails" name="contractDetails" rows="6" cols="40"></textarea><br><br>
+
+        <label for="startDate">تاريخ بدء العقد:</label><br>
+        <input type="date" id="startDate" name="startDate"><br><br>
+
+        <label for="endDate">تاريخ انتهاء العقد:</label><br>
+        <input type="date" id="endDate" name="endDate"><br><br>
+
+        <button type="submit">إنشاء العقد</button>
+    </form>
+
+    <br>
+    <p><a href="index.html">العودة إلى الصفحة الرئيسية</a></p>
+</body>
+</html>
