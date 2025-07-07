@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>خدمات منصة سياق</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 40px;
+    }
+    h2 {
+      color: #1a2d4b;
+      margin-bottom: 30px;
+    }
+    .service-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card a {
+      text-decoration: none;
+      color: #1a2d4b;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>اختر نوع الخدمة</h2>
+  <div class="service-box">
+    <div class="card">
+      <a href="auctions.html">📢 الدخول إلى المزادات</a>
+    </div>
+    <div class="card">
+      <a href="lawyer-request-help.html">⚖️ طلب مساندة من محامٍ</a>
+    </div>
+    <div class="card">
+      <a href="contract-form.html">📄 إعداد عقد إلكتروني</a>
+    </div>
+    <div class="card">
+      <a href="signature.html">✍️ التوقيع الإلكتروني</a>
+    </div>
+  </div>
+</body>
+</html>
