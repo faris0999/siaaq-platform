@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>التوقيع الإلكتروني</title>
+</head>
+<body>
+    <h1>التوقيع الإلكتروني</h1>
+    
+    <p>يرجى توقيع العقد أدناه باستخدام الماوس أو القلم الرقمي:</p>
+
+    <canvas id="signaturePad" width="400" height="200" style="border:1px solid #000;"></canvas><br><br>
+
+    <button onclick="clearSignature()">مسح التوقيع</button>
+    <button onclick="submitSignature()">إرسال التوقيع</button>
+
+    <script>
+        const canvas = document.getElementById("signaturePad");
+        const ctx = canvas.getContext("2d");
+        let isDrawing = false;
+
+        canvas.onmousedown = () => { isDrawing = true };
+        canvas.onmouseup = () => { isDrawing = false; ctx.beginPath(); };
+        canvas.onmousemove = draw;
+
+        function draw(event) {
+            if (!isDrawing) return;
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
+            ctx.strokeStyle = "#000";
+
+            ctx.lineTo(event.offsetX, event.offsetY);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(event.offsetX, event.offsetY);
+        }
+
+        function clearSignature() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function submitSignature() {
+            alert("تم إرسال التوقيع بنجاح!");
+        }
+    </script>
+
+    <br>
+    <p><a href="index.html">العودة إلى الصفحة الرئيسية</a></p>
+</body>
+</html>
